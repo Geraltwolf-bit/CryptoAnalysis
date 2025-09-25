@@ -14,5 +14,4 @@ Tools:
 2) PostgreSQL: data storage.
 3) Tableau: interactive dashboard.
 
-Description:
 This real-time pipeline collects crypto prices and economic indicators via APIs, cleans the data, and shows the user if the change in crypto price is influenced by herd mentality (people panicking / being manipulated into overestimating a currency) or real economy changes.
