@@ -22,7 +22,7 @@ def clean_fear_greed_data(fgi_data):
     try:
         data_list = fgi_data['data']
         df = pd.DataFrame(data_list)
-        df['value'] = pd.to_numeric(df['value'], error = 'coerce')
+        df['value'] = pd.to_numeric(df['value'], errors = 'coerce')
         df['timestamp'] = pd.to_datetime(df['timestamp'], unit = 's')
         df.rename(columns = {
             'value': 'fgi_value',
@@ -45,7 +45,7 @@ def clean_fear_greed_data(fgi_data):
         return None
     
 def clean_sp500_data(sp500_data):
-    if not sp500_data or 'data' not in sp500_data:
+    if sp500_data is None or sp500_data.empty:
         print("No valid data to clean")
         return None
     try:
@@ -62,7 +62,7 @@ def clean_sp500_data(sp500_data):
         print(f"S&P 500 data cleaned: {len(df)} records")
         return df
     except Exception as e:
-        print(f"Error cleaning inflation data: {e}")
+        print(f"Error cleaning S&P 500 data: {e}")
         return None
 
 def clean_inflation_data(inflation_data):
@@ -88,3 +88,22 @@ def merge_all_data(fgi_clean, sp500_clean, inflation_clean):
     except Exception as e:
         print(f"Error merging data: {e}")
         return None
+    
+def test_data_cleaning():
+    from data_extraction import get_fear_greed_index, get_sp500_data, get_inflation_data
+    raw_fgi = get_fear_greed_index()
+    raw_sp500 = get_sp500_data(days=7)
+    raw_inflation = get_inflation_data()
+
+    clean_fgi = clean_fear_greed_data(raw_fgi)
+    clean_sp500 = clean_sp500_data(raw_sp500)
+    clean_inflation = clean_inflation_data(raw_inflation)
+
+    final_data = merge_all_data(clean_fgi, clean_sp500, clean_inflation)
+
+    if final_data is not None:
+        print(final_data.head(3))
+        print(final_data.dtypes)
+    return final_data
+if __name__=='__main__':
+    test_data_cleaning()
