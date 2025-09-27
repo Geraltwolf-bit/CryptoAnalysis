@@ -2,11 +2,11 @@ THE PROBLEM:
 
 People often lose money on crypto, because they buy when the market is in a state of "greed" (prices are high) and sell when the market is in "fear" (prices are low).
 
-There are a lot of sources that show the crypto "Fear & Greed Index":
+There are a lot of sources that show the crypto "Fear & Greed Index", like this one:
 
 https://coinmarketcap.com/charts/fear-and-greed-index/
 
-Trouble is, Fear & Greed Index only shows people's sentiment and doesn't answer if the low/high price is justified or not.
+Trouble is, Fear & Greed Index only shows market's sentiment and doesn't answer if the low/high price is justified or not.
 
 
 THE SOLUTION:
