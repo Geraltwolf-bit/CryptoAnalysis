@@ -29,7 +29,7 @@ The insights provided by the dashboard:
 
 Data:
 
-|         Data                  |       Purpose       |      Source        |     Extraction method                     | URL
+|         Data                  |       Purpose       |      Source        |     Extraction method                     | URL / code
 |-------------------------------|---------------------|--------------------|-------------------------------------------|------|
 | Crypto "Fear & Greed Index"   | Crypto sentiment    | www.alternative.me | requests.get(url)                         | https://api.alternative.me/fng/
 | S&P 500 Index                 | Economy indicator   | YahooFinance       | yfinance library: | yfinance.Ticker("^GSPC")|
