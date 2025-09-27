@@ -4,7 +4,9 @@ People often lose money on crypto, because they buy when the market is in a stat
 
 There are a lot of sources that show the crypto "Fear & Greed Index", like this one:
 
-https://coinmarketcap.com/charts/fear-and-greed-index/
+https://alternative.me/crypto/fear-and-greed-index/
+
+!(images/dashboard.png)
 
 Trouble is, Fear & Greed Index only shows market's sentiment and doesn't answer if the low/high price is justified or not.
 
