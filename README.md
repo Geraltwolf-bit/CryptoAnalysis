@@ -6,7 +6,7 @@ There are a lot of sources that show the crypto "Fear & Greed Index", like this 
 
 https://alternative.me/crypto/fear-and-greed-index/
 
-!(images/dashboard.png)
+![Crypto Fear & Greed Index](images/dashboard.png)
 
 Trouble is, Fear & Greed Index only shows market's sentiment and doesn't answer if the low/high price is justified or not.
 
