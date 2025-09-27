@@ -1,6 +1,6 @@
 THE PROBLEM:
 
-Retail investors often lose money on crypto, because they buy when the market is in a state of "greed" (prices are high) and sell when the market is in "fear" (prices are low).
+People often lose money on crypto, because they buy when the market is in a state of "greed" (prices are high) and sell when the market is in "fear" (prices are low).
 
 There are a lot of sources that show the crypto "Fear & Greed Index":
 
