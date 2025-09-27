@@ -29,11 +29,11 @@ The insights provided by the dashboard:
 
 Data:
 
-|         Data                  |       Purpose       |      Source        |     Extraction method                     |
-|-------------------------------|---------------------|--------------------|-------------------------------------------|
-| Crypto "Fear & Greed Index"   | Crypto sentiment    | www.alternative.me | requests.get(url)                         |
-| S&P 500 Index                 | Economy indicator   | YahooFinance       | yfinance library: yfinance.Ticker("^GSPC")|
-| Inflation rate                | Economy indicator   | World Bank         | requests.get(url)                         |
+|         Data                  |       Purpose       |      Source        |     Extraction method                     | URL
+|-------------------------------|---------------------|--------------------|-------------------------------------------|------|
+| Crypto "Fear & Greed Index"   | Crypto sentiment    | www.alternative.me | requests.get(url)                         | https://api.alternative.me/fng/
+| S&P 500 Index                 | Economy indicator   | YahooFinance       | yfinance library: | yfinance.Ticker("^GSPC")|
+| Inflation rate                | Economy indicator   | World Bank         | requests.get(url)                         | https://api.worldbank.org/v2/country/US/indicator/FP.CPI.TOTL.ZG?format=json |
 
 
 Tools:
