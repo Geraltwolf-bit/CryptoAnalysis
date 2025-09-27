@@ -17,7 +17,7 @@ The dashboard shows in real time if a crash - Extreme Fear - is a bad time to se
 
 If the price is high - Extreme Greed - but S&P 500 is low and inflation is high, it means rising crypto is driven by something irrelevant, like a social media hype, and is, in fact, a bubble that is about to pop. Time to sell!
 
-The insights provided by the dashboard:
+Insights:
 
 |         Crypto Sentiment      | S&P 500 Index  | Inflation |             Interpretation          |
 |-------------------------------|----------------|-----------|-------------------------------------|
