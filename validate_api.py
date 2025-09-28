@@ -1,10 +1,20 @@
-import requests
-
-def validate_api(crypto, currency):
-    url = "https://api.kraken.com/0/public/Ticker?pair={crypto}{currency}"
-    response = requests.get(url)
-    response.raise_for_status
-    data = response.json()
-    print(data)
-
-validate_api('BTC', 'USD')
+{'realtime_start': '2025-09-11',
+ 'realtime_end': '2025-09-11',
+ 'observation_start': '1600-01-01',
+ 'observation_end': '9999-12-31',
+ 'units': 'lin',
+ 'output_type': 1,
+ 'file_type': 'json',
+ 'order_by': 'observation_date',
+ 'sort_order': 'desc',
+ 'count': 944,
+ 'offset': 0,
+ 'limit': 100000,
+ 'observations': [{'realtime_start': '2025-09-11',
+   'realtime_end': '2025-09-11',
+   'date': '2025-08-01',
+   'value': '323.364'},
+  {'realtime_start': '2025-09-11',
+   'realtime_end': '2025-09-11',
+   'date': '2025-07-01',
+   'value': '322.132'}]}
