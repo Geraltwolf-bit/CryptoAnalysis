@@ -35,13 +35,13 @@ Data:
 |-------------------------------|---------------------|--------------------|-------------------------------------------|------|
 | Crypto "Fear & Greed Index"   | Crypto sentiment    | www.alternative.me | requests.get(url)                         | https://api.alternative.me/fng/
 | S&P 500 Index                 | Economy indicator   | YahooFinance       | yfinance library  | yfinance.Ticker("^GSPC")|
-| Inflation rate                | Economy indicator   | World Bank         | requests.get(url)                         | https://api.worldbank.org/v2/country/US/indicator/FP.CPI.TOTL.ZG?format=json |
+| Monthly inflation rate        | Economy indicator   | World Bank         | requests.get(url)                         | https://api.stlouisfed.org/fred/series/observations?series_id=CPIAUCSL&api_key={}&file_type=json |
 
 
 Tools:
 1) Python & Pandas: API integration and data transformation.
 2) PostgreSQL: data storage.
-3) Tableau: interactive dashboard.
+3) Streamlit: interactive dashboard.
 
 
 THE CONCLUSION:
