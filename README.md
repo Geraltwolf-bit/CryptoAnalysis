@@ -42,14 +42,12 @@ LOGIC:
 2) S&P 500 Index is obtained directly, but the "Rising/Falling" trend is calculated using Simple Moving Average.
    
 3) Monthly inflation rate is not obtained directly. Instead, World Bank provides Consumer Price Index (CPI) for each month. Monthly inflation rate is calculated by formula:
-   
-|-------------------------------------------------------------------------------|
-| Monthyl Inflation rate = ((Current month CPI / Previous month CPI) - 1) * 100 |
+
+Monthyl Inflation rate = ((Current month CPI / Previous month CPI) - 1) * 100
 
 Then, Monthly Inflation rate is annualized by formula:
 
-|-----------------------------------------------------------------------------|
-| Annualized inflation = ((1 + Monthly Inflation rate / 100) ** 12 - 1) * 100 |
+Annualized inflation = ((1 + Monthly Inflation rate / 100) ** 12 - 1) * 100
 
 Then, Annualized inflation is compared to the Central Bank target annual inflation, which is 2%:
 - if Annulized inflation > 2%, inflation is "High".
