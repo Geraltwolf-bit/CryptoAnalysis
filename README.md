@@ -17,7 +17,7 @@ The dashboard shows in real time if a crash - Extreme Fear - is a bad time to se
 
 If the price is high - Extreme Greed - but S&P 500 is low and inflation is high, it means rising crypto is driven by something irrelevant, like a social media hype, and is, in fact, a bubble that is about to pop. Time to sell!
 
-Insights:
+THE INSIGHTS:
 
 |         Crypto Sentiment      | S&P 500 Index  | Inflation |             Interpretation          |
 |-------------------------------|----------------|-----------|-------------------------------------|
@@ -27,7 +27,7 @@ Insights:
 | 🟩 Extreme Greed (high price) | 📈  Rising    | 📉  Low   | High price is justified - buy       |
 
 
-Data:
+THE DATA:
 
 |         Data                  |       Purpose       |      Source        |     Extraction method                     | URL / code
 |-------------------------------|---------------------|--------------------|-------------------------------------------|------|
@@ -36,7 +36,7 @@ Data:
 | Monthly inflation rate        | Economy indicator   | World Bank         | requests.get(url)                         | https://api.stlouisfed.org/fred/series/observations?series_id=CPIAUCSL&api_key={}&file_type=json |
 
 
-Logic:
+THE LOGIC:
 1) Crypto "Fear & Greed Index" is obtained directly.
    
 2) S&P 500 Index is obtained directly, but this data is noisy. To smooth the noise, I use Simple Moving Average to calculate the "Rising/Falling" trend.
@@ -54,7 +54,7 @@ To find if Annualized inflation is "High" or "Low", I compare it to the Central 
 - if Annualized inflation <= 2%, inflation is "Low".
 
 
-Tools:
+THE TOOLS:
 1) Python & Pandas: API integration and data transformation.
 2) PostgreSQL: data storage.
 3) Streamlit: interactive dashboard.
