@@ -41,9 +41,9 @@ Logic:
    
 2) S&P 500 Index is obtained directly, but this data is noisy. To smooth the noise, I use Simple Moving Average to calculate the "Rising/Falling" trend.
    
-3) Monthly inflation rate is not obtained directly.
-   
-Instead, World Bank provides Consumer Price Index (CPI) for each month. Monthly inflation rate is calculated by formula:
+3) Monthly inflation rate is not obtained directly. Instead, World Bank provides Consumer Price Index (CPI) for each month.
+
+Monthly inflation rate is calculated by formula:
 - Monthyl Inflation rate = ((Current month CPI / Previous month CPI) - 1) * 100
 
 Then, Monthly Inflation rate is annualized by formula:
