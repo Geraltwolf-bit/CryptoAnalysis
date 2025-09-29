@@ -19,7 +19,7 @@ If the price is high - Extreme Greed - but S&P 500 is low and inflation is high,
 
 THE INSIGHTS:
 
-|         Crypto Sentiment      | S&P 500 Index  | Inflation |             Interpretation          |
+|         Crypto Sentiment      | S&P 500 Index  | Inflation |              Insight                |
 |-------------------------------|----------------|-----------|-------------------------------------|
 | 🟩 Extreme Fear  (low price)  | 📈  Rising    | 📉  Low   | Fear is irrational      - buy       |
 | 🟥 Extreme Greed (high price) | 📉  Falling   | 📈  High  | High price is a bubble  - sell      |
