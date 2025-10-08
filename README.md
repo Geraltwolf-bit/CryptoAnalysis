@@ -1,30 +1,34 @@
 THE PROBLEM:
 
-People often lose money on crypto, because they buy crypto when the market is in a state of "greed" (crypto prices are high) and sell when the market is in "fear" (crypto prices are low).
-
-There are a lot of sources that show the crypto "Fear & Greed Index", like for example, https://alternative.me/crypto/fear-and-greed-index/:
+People often lose money on crypto, because they follow the crypto Fear & Greed Index:
 
 ![Crypto Fear & Greed Index](images/dashboard.png)
 
-Trouble is, Fear & Greed Index only shows market's sentiment and doesn't answer if the low/high crypto price is justified or not.
+
+It assumes that Fear is an undervalued market and buying opportunity, while Greed means crypto market is a bubble. The message is clear and easy to follow, the only problem is that it is often wrong.
+
+Not every crash is a buying opportunity and not every raise is a bubble. But Fear & Greed Index can't tell it, because it's based on crypto price, Google searches, and social media hype and doesn't take into account real economy indicators, like inflation and stock market. That is why it is so unreliable and people lose so big.
 
 
 THE SOLUTION:
 
-To help people make better decisions, I built an interactive dashboard that squares the crypto "Fear & Greed Index" with real economy indicators: S&P 500 Index (stock market health) and inflation rate.
+To help people make better decisions, I built an interactive dashboard that squares the crypto Fear & Greed Index with real economy indicators: S&P 500 Index (stock market value) and inflation rate.
 
-The dashboard shows in real time if a crypto price crash - indicated by Extreme Fear - is a bad time to sell or good. If S&P 500 is high and inflation is low, it means that economy is strong and crypto will bounce back. It's a buying opportunity!
+The dashboard shows in real time if Index is justified or not.
 
-If the crypto price is high - indicated by Extreme Greed - but S&P 500 is low and inflation is high, it means rising crypto is driven by something irrelevant, like a social media hype, and is, in fact, a bubble that is about to pop. Time to sell!
+For example:
+
+- If Fear goes along stock market crash and inflation is high, Fear is justified and buying is not recommended. But if stock market is rising and inflation is low, Fear is indeed a buying opportunity. Buy now!
+- If Greed goes along rising stock market and inflation is low, it's safe to buy. But if stock market is falling and inflation is high, Greed is a bubble. Time to sell!
 
 THE INSIGHTS:
 
-|         Crypto Sentiment      | S&P 500 Index  | Inflation |              Insight                |
-|-------------------------------|----------------|-----------|-------------------------------------|
-| 🟩 Extreme Fear  (low price)  | 📈  Rising    | 📉  Low   | Fear is irrational      - buy       |
-| 🟥 Extreme Greed (high price) | 📉  Falling   | 📈  High  | High price is a bubble  - sell      |
-| 🟥 Extreme Fear  (low price)  | 📉  Falling   | 📈  High  | Low price is justified  - don't buy |
-| 🟩 Extreme Greed (high price) | 📈  Rising    | 📉  Low   | High price is justified - buy       |
+|         Crypto Sentiment      | S&P 500 Index  | Inflation |     Insight      |
+|-------------------------------|----------------|-----------|------------------|
+| 🟩 Extreme Fear  (low price)  | 📈  Rising    | 📉  Low   | Buy now!         |
+| 🟥 Extreme Fear  (low price)  | 📉  Falling   | 📈  High  | Don't buy!       |
+| 🟩 Extreme Greed (high price) | 📈  Rising    | 📉  Low   | It's safe to buy |
+| 🟥 Extreme Greed (high price) | 📉  Falling   | 📈  High  | Sell now!        |
 
 
 THE DATA:
