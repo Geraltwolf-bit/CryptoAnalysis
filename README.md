@@ -7,7 +7,7 @@ People often lose money on crypto, because they follow the crypto Fear & Greed I
 
 It assumes that Fear is an undervalued market and buying opportunity, while Greed means crypto market is a bubble. The message is clear and easy to follow, the only problem is that it is often wrong.
 
-Not every crash is a buying opportunity and not every raise is a bubble. But Fear & Greed Index can't tell it, because it's based on crypto price, Google searches, and social media hype and doesn't take into account real economy indicators, like inflation and stock market. That is why it is so unreliable and people lose so big.
+Not every crash is a buying opportunity and not every raise is a bubble. But Fear & Greed Index can't tell that, because it's based on crypto price, Google searches, and social media hype and doesn't take into account real economy indicators, like inflation and stock market. That is why it is so unreliable and people lose so big.
 
 
 THE SOLUTION:
