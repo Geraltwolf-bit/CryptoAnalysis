@@ -18,17 +18,17 @@ The dashboard shows in real time if Index is justified or not.
 
 For example:
 
-- If Fear goes along stock market crash and inflation is high, Fear is justified and buying is not recommended. But if stock market is rising and inflation is low, Fear is indeed a buying opportunity. Buy now!
+- If Fear goes along stock market crash and inflation is high, buying is not recommended. But if stock market is rising and inflation is low, Fear is indeed a buying opportunity. Buy now!
 - If Greed goes along rising stock market and inflation is low, it's safe to buy. But if stock market is falling and inflation is high, Greed is a bubble. Time to sell!
 
 THE INSIGHTS:
 
-|         Crypto Sentiment      | S&P 500 Index  | Inflation |     Insight      |
-|-------------------------------|----------------|-----------|------------------|
-| 🟩 Extreme Fear  (low price)  | 📈  Rising    | 📉  Low   | Buy now!         |
-| 🟥 Extreme Fear  (low price)  | 📉  Falling   | 📈  High  | Don't buy!       |
-| 🟩 Extreme Greed (high price) | 📈  Rising    | 📉  Low   | It's safe to buy |
-| 🟥 Extreme Greed (high price) | 📉  Falling   | 📈  High  | Sell now!        |
+|    Crypto Sentiment   | S&P 500 Index  | Inflation |  Insight    |
+|-----------------------|----------------|-----------|-------------|
+| 🟩 Fear  (low price)  | 📈  Rising    | 📉  Low   | Buy no      |
+| 🟥 Fear  (low price)  | 📉  Falling   | 📈  High  | Don't buy!  |
+| 🟩 Greed (high price) | 📈  Rising    | 📉  Low   | Safe to buy |
+| 🟥 Greed (high price) | 📉  Falling   | 📈  High  | Sell now!   |
 
 
 THE DATA:
@@ -53,17 +53,18 @@ Monthly inflation rate is calculated by formula:
 Then, Monthly Inflation rate is annualized by formula:
 - Annualized inflation = ((1 + Monthly Inflation rate / 100) ** 12 - 1) * 100
 
-To find if Annualized inflation is "High" or "Low", I compare it to the Central Bank target annual inflation, which is 2%:
-- if Annulized inflation > 2%, inflation is "High".
-- if Annualized inflation <= 2%, inflation is "Low".
+To find if Annualized inflation is "High", "Moderate", or "Low", I compare it to the Central Bank target annual inflation, which is 2%:
+- if Annulized inflation <= 2%, inflation is "Low".
+- if Annulized inflation <= 5%, inflation is "Moderate".
+- if Annualized inflation > 5%, inflation is "High".
 
 
 THE TOOLS:
 1) Python & Pandas: API integration and data transformation.
-2) PostgreSQL: data storage.
+2) Docker & PostgreSQL: data storage.
 3) Streamlit: interactive dashboard.
 
 
 THE CONCLUSION:
 
-This real-time pipeline collects crypto fear&greed index and economic indicators via APIs, cleans the data, storages it in PostgreSQL, and shows the user if crypto sentiment is justified by real economy indicators, and therefore, whether it should be acted upon or not.
+This real-time pipeline collects data via APIs, analyses it, and shows the user if crypto Fear & Greed Index is justified by real economy indicators, and therefore, whether it should be acted upon or not.
