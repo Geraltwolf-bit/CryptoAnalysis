@@ -25,7 +25,7 @@ THE INSIGHTS:
 
 |    Crypto Sentiment   | S&P 500 Index  | Inflation |  Insight    |
 |-----------------------|----------------|-----------|-------------|
-| 🟩 Fear  (low price)  | 📈  Rising    | 📉  Low   | Buy no      |
+| 🟩 Fear  (low price)  | 📈  Rising    | 📉  Low   | Buy now!    |
 | 🟥 Fear  (low price)  | 📉  Falling   | 📈  High  | Don't buy!  |
 | 🟩 Greed (high price) | 📈  Rising    | 📉  Low   | Safe to buy |
 | 🟥 Greed (high price) | 📉  Falling   | 📈  High  | Sell now!   |
