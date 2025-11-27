@@ -41,13 +41,13 @@ THE DATA:
 
 
 THE LOGIC:
-1) Crypto "Fear & Greed Index" is obtained directly.
+1) Crypto "Fear & Greed Index" is obtained directly from alternative.me.
    
 2) S&P 500 Index is obtained directly from Yahoo Finance.
    
 3) Monthly inflation rate is not obtained directly. Instead, I get Consumer Price Index (CPI) for each month.
 
-Then I calculate Monthly inflation rate by the formula:
+Then, I calculate Monthly inflation rate by the formula:
 - Monthyl Inflation rate = ((Current month CPI / Previous month CPI) - 1) * 100
 
 Then, I annualize Monthly Inflation rate by the formula:
@@ -60,21 +60,27 @@ To find if Annualized inflation is "High", "Moderate", or "Low", I compare it to
 
 
 THE TOOLS:
+
 1) Python & Pandas: API integration and data transformation.
 2) Docker & PostgreSQL: data storage.
 3) Streamlit: interactive dashboard.
 
 
 THE CONCLUSION:
+
 This real-time pipeline collects data via APIs, analyses it, and shows the user if the crypto Fear & Greed Index is stable and justified by real economy indicators, and therefore, whether it should be acted upon or not.
 
 IMPORTANT NOTE:
+
 Data on Consumer Price Index (CPI) is provided by Federal Reserve Bank of St.Louis. A personalized API key is required for authentication.
+
 ###Instruction on obtaining an API key:
+
 - Register on https://fredaccount.stlouisfed.org/.
 - Visit https://fredaccount.stlouisfed.org/apikeys and click on "Request API Key".
 - You will recieve your API key on your email.
 
 ###Instructions on setup:
+
 - Create .env file in the project root.
 - infl_api_key = 'PutYourKeyHere'
