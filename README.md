@@ -74,13 +74,14 @@ IMPORTANT NOTE:
 
 Data on Consumer Price Index (CPI) is provided by Federal Reserve Bank of St.Louis. A personalized API key is required for authentication.
 
-###Instruction on obtaining an API key:
+
+Instructions on obtaining an API key:
 
 - Register on https://fredaccount.stlouisfed.org/.
 - Visit https://fredaccount.stlouisfed.org/apikeys and click on "Request API Key".
 - You will recieve your API key on your email.
 
-###Instructions on setup:
+Instructions on setup:
 
 - Create .env file in the project root.
 - infl_api_key = 'PutYourKeyHere'
