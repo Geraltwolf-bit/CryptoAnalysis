@@ -40,7 +40,6 @@ THE DATA:
 | Monthly inflation rate        | Economy indicator   | World Bank         | requests.get(url)                         | https://api.stlouisfed.org/fred/series/observations?series_id=CPIAUCSL&api_key={}&file_type=json |
 
 
-THE LOGIC:
 1) Crypto "Fear & Greed Index" is obtained directly from alternative.me.
    
 2) S&P 500 Index is obtained directly from Yahoo Finance.
