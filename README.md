@@ -70,7 +70,7 @@ THE CONCLUSION:
 
 This real-time pipeline collects data via APIs, analyses it, and shows the user if the crypto Fear & Greed Index is stable and justified by real economy indicators, and therefore, whether it should be acted upon or not.
 
-IMPORTANT NOTE:
+INSTRUCTIONS:
 
 Data on Consumer Price Index (CPI) is provided by Federal Reserve Bank of St.Louis. A personalized API key is required for authentication.
 
